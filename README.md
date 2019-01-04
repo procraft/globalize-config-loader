@@ -1,11 +1,17 @@
 Globalize-config-loader is a loader for [globalize-config-compiler](https://github.com/nkovacs/globalize-config-compiler).
 It will convert a configuration object (e.g. a json file loaded with json-loader) into a function that returns a new Globalize instance.
 
+## Features of this fork
+
+* Fixed bug which caused this loader doesn't respect results of processing of the previous loaders
+* ``locale`` option to load only one locale (useful for faster development)
+* globalize-config-compiler is now a peer dependency
+
 ## Installation
 
 Install the loader, globalize, and cldr-data:
 
-    npm install --save-dev globalize-config-loader globalize cldr-data
+    npm install --save-dev globalize-config-loader@procraft/globalize-config-loader globalize-config-compiler globalize cldr-data
 
 ## Usage
 
