@@ -5,7 +5,8 @@ It will convert a configuration object (e.g. a json file loaded with json-loader
 
 * Fixed bug which caused this loader doesn't respect results of processing of the previous loaders
 * ``locale`` option to load only one locale (useful for faster development)
-* globalize-config-compiler is now a peer dependency
+* _globalize-config-compiler_ is now a peer dependency
+* generated chunks in async mode are properly named and groupped that allows proper tracking and including with SSR 
 
 ## Installation
 
